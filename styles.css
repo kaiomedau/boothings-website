@@ -1,0 +1,71 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
+	font-family:Roboto;
+	text-align:center;
+	letter-spacing:0;
+	color:white;
+	font-size:16px;
+}
+
+
+.bg { 
+	background-image:linear-gradient(0deg, rgba(0, 255, 132.0000073313713, 1) 0%,rgba(157.0000058412552, 250.00000029802322, 247.00000047683716, 1) 49.47916567325592%,rgba(109.00000110268593, 201.00000321865082, 253.0000001192093, 1) 100%) ;
+	width:100%;
+	height:100%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+.content { 
+	color:white;
+	width:262px;
+	height:414px;
+	position:absolute;
+	display: block;
+	border: solid 5px;
+	top: 20%;
+	left: 50%;
+	-ms-transform: translateY(-60%);
+  	transform: translateY(-60%);
+  	-ms-transform: translateX(-50%);
+  	transform: translateX(-50%);
+}
+
+.logo { 
+	width:230px;
+	height:103px;
+	margin: auto;
+	background-image:url(images/logo_ent_dados_asset_10_3x_1.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.calltoaction { 
+	display: block;
+	width:100%;
+	height:66px;
+	font-size:28px;
+	margin: 50px 0 50px 0;
+}
+
+.collection-description {
+	display: block;
+	width:100%;
+}
+
+.twitter-name { 
+	color:black;
+	display: block;
+	position:absolute;
+	bottom:0px;
+	width: 100%;
+}
