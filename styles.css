@@ -24,14 +24,12 @@ a {
 }
 
 
-
 .content { 
 	color:white;
 	width:262px;
 	height:414px;
 	position:absolute;
 	display: block;
-	border: solid 5px;
 	top: 20%;
 	left: 50%;
 	-ms-transform: translateY(-60%);
