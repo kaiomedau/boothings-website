@@ -28,6 +28,10 @@ html, body {
 	background-color: #FF87B9;	
 }
 
+.dark_blue_bg {
+	background-color: #2F7CA8;
+}
+
 div {
 	overflow: auto;
 }
@@ -76,11 +80,6 @@ h4 {
 	min-height: 100%;
 }
 
-/*.session {
-	border: solid yellow;
-	position: relative;
-}*/
-
 .content {
 	position: relative;
 	margin: 40px;
@@ -94,8 +93,7 @@ h4 {
 	margin: 20px auto;
 }
 
-.socials{
-	/*border: solid blue;*/
+.socials {
 	display: inline-block;
 	float: right;
 	margin: 20px 0;
@@ -104,7 +102,25 @@ h4 {
 .socials a {
 	display: inline-block;
 	float: right;
-	margin-left: 20px;
+	margin-left: 24px;
+}
+
+.socials.teammember, .socials.footer {
+	float: none;
+}
+
+.socials.teammember img {
+	width: 24px;
+}
+
+.socials a:last-of-type, 
+.socials.teammember a:last-of-type,
+.socials.footer a:last-of-type {
+	margin-left: 0px;
+}
+
+.socials.footer img {
+	width: 32px;
 }
 
 .logo { 
@@ -116,6 +132,12 @@ h4 {
 	background-size:120px;
 	float: left;
 }
+
+.logo.footer {
+	float: none;
+	margin: 0px auto;
+}
+
 
 .round_button {
 	font-size: 32px;
