@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles.css">
-    
+
   </head>
-          
+
   <body>
 
       <div class="session grad_green h_100">
@@ -51,7 +51,7 @@
 
       </div>
 
-      <div class="session">
+      <div class="session blue_bg">
         <div id="about-us" class="content">
             <h2>About Us</h2>
 
@@ -63,9 +63,59 @@
         </div>
       </div>
 
+      <div class="session pink_bg">
+        <div id="faqs" class="content">
+            <h2>FAQ'S</h2>
+
+            <div class="question open">
+              <h5>Price & Mint Amount</h5>
+              <div class="plus-sign">+</div>
+              <p>Ghosts are free! However, to ensure that as many people as possible can participate free of charge, we created an anti-greed and anti-bots system, in which, from the second ghost onwards, the price starts at 20 MATIC and doubles with each new mint.</p>
+            </div>
+
+            <div class="question open">
+              <h5>Why a whitelist if ghosts are free?</h5>
+              <div class="plus-sign">+</div>
+              <p>This is a way to generate awareness and engagement, as each place on the list guarantees a ghost. In addition, it is another layer of security against bots. Our goal is to have as many people as possible on our list, ensuring that more real people have the opportunity to join our community.</p>
+            </div>
+
+            <div class="question open">
+              <h5>How can I get a whitelist slot?</h5>
+              <div class="plus-sign">+</div>
+              <p>Participating in our community. We have events, missions and giveaways all the time, just participate. Remember that the idea is to have all NFTs on the listed, so there will be no shortage of opportunities for you to win your spot.</p>
+            </div>
+
+            <div class="question open">
+              <h5>When Will Boo Things Launch?</h5>
+              <div class="plus-sign">+</div>
+              <p>We are still deciding on the final release date. But the more engagement we get, the faster the launch will arrive.<br />The launch will take place in two phases. The first 24 hours will be dedicated to the whitelist mint. We will then release it to the general public.</p>
+            </div>
+
+            <div class="question open">
+              <h5>Do You Have a Roadmap?</h5>
+              <div class="plus-sign">+</div>
+              <p>Our roadmap is about creating an amazing experience for our community and opening the doors of the NFT universe to everyone. We have several ideas to be put into practice once the community is formed, join our Discord to learn more about it.</p>
+            </div>
+            
+        </div>
+      </div>
+
       <div class="session">
         <footer></footer>
       </div>
+
+    <script type="text/javascript">
+      var questions = document.getElementsByClassName('question');
+      console.log (questions);
+
+      var openUestions = Array.prototype.filter.call(questions, function(question){
+        question.classList.toggle('open');
+
+        question.addEventListener('click', function() {
+          question.classList.toggle('open');
+        });
+      });
+    </script>
 
   </body>
 </html>
