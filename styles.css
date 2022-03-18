@@ -119,8 +119,8 @@ h4 {
 	margin-left: 0px;
 }
 
-.socials.footer img {
-	width: 32px;
+.socials img, .socials.footer img {
+	height: 32px;
 }
 
 .logo { 
