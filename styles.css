@@ -28,6 +28,10 @@ html, body {
 	background-color: #FF87B9;	
 }
 
+.purple_bg {
+	background-color: #D783FF;
+}
+
 .dark_blue_bg {
 	background-color: #2F7CA8;
 }
@@ -207,6 +211,31 @@ h4 {
 	display: block;
 }
 
+
+.wrapper {
+	overflow: hidden;
+}
+
+.featured-boos {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 4000px;
+	animation: slide 20s ease-in-out infinite;
+}
+
+.featured-boos li {
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+
+.featured-boos img {
+	width: 324px;
+}
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 	header ul {display: none;}
@@ -240,7 +269,17 @@ h4 {
 	}	
 }
 
-
+@keyframes slide {
+	0% {
+		transform: translatex(0);
+	}
+	50% {
+		transform: translatex(-41%);
+	}
+	100% {
+		transform: translatex(0);
+	}
+}
 
 @keyframes float {
 	0% {
