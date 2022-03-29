@@ -12,7 +12,6 @@ html, body {
 	font-size:16px;
 
 	background: #3bd0ff;
-
 }
 
 
@@ -247,6 +246,7 @@ h4 {
 	.round_button {
 		font-size: 24px;
 		padding: 20px 32px;
+		max-width: 280px;
 	}
 
 	.content, header {
