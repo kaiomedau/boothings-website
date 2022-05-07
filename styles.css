@@ -157,6 +157,14 @@ h4 {
 	margin: 40px auto 0px;
 }
 
+.round_button a {
+	color: #fff;
+}
+
+.round_button a:hover {
+	text-decoration: underline;
+}
+
 .hero {
 	position: absolute;
   	top: 50%;
