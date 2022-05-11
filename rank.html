@@ -110,9 +110,9 @@
 
       let pagtion = '<li><a href="'+(pageLink+1)+'">'+1+' / '+(boosPerPage-1)+'</li>';;
       for (let i = 0; i < 4; i++) {
-        let pagNumber = (offset + 1 + boosPerPage) + (boosPerPage * i);
+        let pagNumber = ((offset + 1) + boosPerPage) + (boosPerPage * i);
         let lastNumber = pagNumber+(boosPerPage-1);
-        let pag = '<li><a href="'+pageLink+ pagNumber+'">'+pagNumber+' / '+lastNumber+'</li>';
+        let pag = '<li><a href="'+(pageLink+ pagNumber)+'">'+pagNumber+' / '+lastNumber+'</li>';
         pagtion = pagtion + pag;
       }
 
