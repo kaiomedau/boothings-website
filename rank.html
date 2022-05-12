@@ -63,9 +63,7 @@
             <ul id="boos-rank"></ul>
 
             <ul id="pagination">
-              <li><a href="">2000 / 2049</li>
-              <li><a href="">2050 / 2149</li>
-              <li><a href="">2100 / 2149</li>
+              
             </ul>
         </div>
 
@@ -99,21 +97,27 @@
       let boosPerPage = 50;
       let openseaurl = "https://opensea.io/assets/matic/0xed9b49afac032401f15527c42c6c54931aa6571a/";
       let pageLink = "./rank.html?os=";
+      let imageLink = "https://ditothepug.com/wp-content/boo-things/";
       let boos = "";
       for (let i = 0; i < boosPerPage; i++) {
         let r = offset + i;
         let rank = r+1;
         let link = openseaurl + ranks[r];
-        let boo = '<li class="booRank"><a href="'+link+'" target="_blank"><img src="images/boo-things-cover-512.png"><h4>Rank '+rank+'</h4><div class="boo-number">#'+ranks[r]+'</div></a></li>';
+        //let boo = '<li class="booRank"><a href="'+link+'" target="_blank"><img src="'+(imageLink+ranks[r])+'.png"><h4>Rank '+rank+'</h4><div class="boo-number">#'+ranks[r]+'</div></a></li>';
+        let boo = '<li class="booRank"><a href="'+link+'" target="_blank"><img src=images/boo-things-cover-512.png"><h4>Rank '+rank+'</h4><div class="boo-number">#'+ranks[r]+'</div></a></li>';
         boos = boos + boo;
       }
 
       let pagtion = '<li><a href="'+(pageLink+1)+'">'+1+' / '+(boosPerPage-1)+'</li>';;
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 3; i++) {
         let pagNumber = ((offset + 1) + boosPerPage) + (boosPerPage * i);
-        let lastNumber = pagNumber+(boosPerPage-1);
-        let pag = '<li><a href="'+(pageLink+ pagNumber)+'">'+pagNumber+' / '+lastNumber+'</li>';
-        pagtion = pagtion + pag;
+        if(pagNumber<10000){
+          let lastNumber = pagNumber+(boosPerPage-1);
+          let pag = '<li><a href="'+(pageLink+ pagNumber)+'">'+pagNumber+' / '+lastNumber+'</li>';
+          pagtion = pagtion + pag;
+        } else {
+          break;
+        }
       }
 
       let container = document.getElementById("boos-rank");
