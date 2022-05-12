@@ -326,6 +326,17 @@ h4 {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
+	.booRank {
+		width: 180px;
+	}
+
+	.booRank h4, .booRank .boo-number {
+		font-size: 16px;
+	}
+}
+
+
 } 
 
 @media only screen and (max-height: 450px) {
