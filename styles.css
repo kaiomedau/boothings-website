@@ -297,12 +297,20 @@ h4 {
 	background: #ebebeb;
 }
 
+.menu a {
+	font-size: 18px;
+	color: #fff;
+}
+
+.menu a:hover {
+	color: black;
+}
 
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	header ul {display: none;}
+	/*header ul {display: none;}*/
 
 	.round_button {
 		font-size: 24px;
