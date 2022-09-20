@@ -146,15 +146,19 @@ h4 {
 }
 
 
+.buttons div {
+	display: inline-block;
+}
+
 .round_button {
-	font-size: 32px;
+	font-size: 24px;
 	font-weight: 500;
 	border-radius: 120px;
 	border: solid 4px white;
-	display: block;
+	/*display: block;*/
 	padding: 10px 40px;
 	max-width: 300px;
-	margin: 40px auto 0px;
+	margin: 10px;
 }
 
 .round_button a {
